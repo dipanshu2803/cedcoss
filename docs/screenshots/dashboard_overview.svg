@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%" style="background:#f8fafc; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="praiseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="30" y="16" width="38" height="38" rx="10" fill="url(#headerGrad)" />
+  <path d="M49 26 L52 33 L59 34 L54 39 L55 46 L49 42 L43 46 L44 39 L39 34 L46 33 Z" fill="#ffffff" />
+  <text x="80" y="36" font-size="18" font-weight="800" fill="#0f172a">ReviewLens</text>
+  <rect x="195" y="24" width="100" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe" />
+  <text x="210" y="39" font-size="11" font-weight="600" fill="#4f46e5">AI Store Copilot</text>
+  <text x="80" y="52" font-size="11" fill="#64748b">Turn messy customer reviews into actionable store insights</text>
+
+  <!-- Header Badges -->
+  <rect x="740" y="22" width="130" height="26" rx="8" fill="#f1f5f9" stroke="#e2e8f0" />
+  <circle cx="754" cy="35" r="4" fill="#6366f1" />
+  <text x="764" y="39" font-size="11" font-weight="600" fill="#334155">Gemini 1.5 Flash</text>
+
+  <rect x="880" y="22" width="140" height="26" rx="8" fill="#ecfdf5" stroke="#a7f3d0" />
+  <circle cx="894" cy="35" r="4" fill="#10b981" />
+  <text x="904" y="39" font-size="11" font-weight="600" fill="#065f46">SQLite Cache (Active)</text>
+
+  <rect x="1030" y="22" width="140" height="26" rx="8" fill="#eff6ff" stroke="#bfdbfe" />
+  <path d="M1042 32 L1046 36 L1054 28" fill="none" stroke="#2563eb" stroke-width="2" />
+  <text x="1060" y="39" font-size="11" font-weight="600" fill="#1e40af">R012 Defense Active</text>
+
+  <!-- Summary Cards Grid -->
+  <!-- Card 1: Total Analyzed -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="95" width="265" height="135" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="50" y="125" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">TOTAL ANALYZED</text>
+    <rect x="245" y="110" width="32" height="32" rx="8" fill="#eef2ff" />
+    <path d="M255 126 C255 120 267 120 267 126" stroke="#4f46e5" stroke-width="2" fill="none" />
+    <text x="50" y="170" font-size="34" font-weight="800" fill="#0f172a">30</text>
+    <text x="100" y="170" font-size="12" fill="#64748b">reviews</text>
+    <rect x="50" y="190" width="105" height="22" rx="6" fill="#fef3c7" />
+    <text x="58" y="205" font-size="10" font-weight="600" fill="#92400e">1 duplicate reused</text>
+    <rect x="162" y="190" width="95" height="22" rx="6" fill="#f1f5f9" />
+    <text x="170" y="205" font-size="10" font-weight="600" fill="#475569">1 empty skipped</text>
+  </g>
+
+  <!-- Card 2: Sentiment Split -->
+  <g filter="url(#shadow)">
+    <rect x="315" y="95" width="265" height="135" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="335" y="125" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">SENTIMENT BREAKDOWN</text>
+    <text x="335" y="168" font-size="22" font-weight="800" fill="#10b981">41%</text>
+    <text x="388" y="168" font-size="14" fill="#cbd5e1">/</text>
+    <text x="402" y="168" font-size="18" font-weight="700" fill="#f59e0b">21%</text>
+    <text x="446" y="168" font-size="14" fill="#cbd5e1">/</text>
+    <text x="460" y="168" font-size="22" font-weight="800" fill="#f43f5e">38%</text>
+    <!-- Multi-segment bar -->
+    <rect x="335" y="185" width="92" height="8" rx="4" fill="#10b981" />
+    <rect x="429" y="185" width="47" height="8" fill="#f59e0b" />
+    <rect x="478" y="185" width="85" height="8" rx="4" fill="#f43f5e" />
+    <text x="335" y="210" font-size="10" font-weight="600" fill="#64748b">12 Positive · 6 Neutral · 11 Negative</text>
+  </g>
+
+  <!-- Card 3: Needs Reply -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="95" width="265" height="135" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="620" y="125" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">NEEDS RESPONSE</text>
+    <rect x="815" y="110" width="32" height="32" rx="8" fill="#ffe4e6" />
+    <path d="M825 126 L833 120 L833 132 Z" fill="#e11d48" />
+    <text x="620" y="170" font-size="34" font-weight="800" fill="#e11d48">11</text>
+    <text x="665" y="170" font-size="12" font-weight="600" fill="#e11d48">urgent reviews</text>
+    <text x="620" y="202" font-size="10.5" fill="#64748b">Defects, damages, or missing packages</text>
+  </g>
+
+  <!-- Card 4: Rating Agreement (Bonus) -->
+  <g filter="url(#shadow)">
+    <rect x="885" y="95" width="285" height="135" rx="14" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="905" y="125" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">RATING AGREEMENT (BONUS)</text>
+    <rect x="1120" y="110" width="32" height="32" rx="8" fill="#eff6ff" />
+    <path d="M1130 130 L1142 120" stroke="#2563eb" stroke-width="2" />
+    <text x="905" y="170" font-size="34" font-weight="800" fill="#0f172a">96%</text>
+    <text x="975" y="170" font-size="12" fill="#64748b">stars vs sentiment</text>
+    <text x="905" y="202" font-size="10.5" fill="#64748b">Flags R008 mismatch (5★ rating with negative text)</text>
+  </g>
+
+  <!-- Execution & Performance Log Bar (Bonus) -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="245" width="1140" height="50" rx="10" fill="#0f172a" />
+    <circle cx="50" cy="270" r="4" fill="#f59e0b" />
+    <text x="65" y="274" font-size="11" font-weight="700" fill="#f8fafc" letter-spacing="0.5">PERFORMANCE &amp; COST METRICS (BONUS):</text>
+    <text x="360" y="274" font-size="11" font-family="'JetBrains Mono', monospace" fill="#94a3b8">Processing Time: <tspan fill="#38bdf8" font-weight="700">551 ms</tspan></text>
+    <text x="540" y="274" font-size="11" font-family="'JetBrains Mono', monospace" fill="#94a3b8">Live AI Calls: <tspan fill="#4ade80" font-weight="700">0 (Cached)</tspan></text>
+    <text x="730" y="274" font-size="11" font-family="'JetBrains Mono', monospace" fill="#94a3b8">Cache Hits: <tspan fill="#60a5fa" font-weight="700">28 / 28 (100%)</tspan></text>
+    <text x="950" y="274" font-size="11" font-family="'JetBrains Mono', monospace" fill="#94a3b8">Estimated Cost: <tspan fill="#facc15" font-weight="700">$0.00 (Free Tier)</tspan></text>
+  </g>
+
+  <!-- Top 3 Complaints & Top 3 Praises -->
+  <!-- Left Column: Complaints -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="315" width="555" height="425" rx="16" fill="#ffffff" stroke="#fecdd3" />
+    <rect x="30" y="315" width="555" height="4" fill="url(#cardGrad)" rx="2" />
+    <circle cx="55" cy="345" r="12" fill="#ffe4e6" />
+    <text x="50" y="350" font-size="14" font-weight="bold" fill="#e11d48">!</text>
+    <text x="75" y="348" font-size="15" font-weight="800" fill="#0f172a">Top 3 Customer Complaints</text>
+    <rect x="475" y="333" width="90" height="22" rx="11" fill="#fff1f2" stroke="#fecdd3" />
+    <text x="488" y="348" font-size="10" font-weight="700" fill="#be123c">Action Needed</text>
+
+    <!-- Complaint 1 -->
+    <rect x="50" y="375" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="65" y="390" width="24" height="24" rx="6" fill="#fee2e2" />
+    <text x="72" y="406" font-size="11" font-weight="800" fill="#b91c1c">#1</text>
+    <text x="100" y="402" font-size="13" font-weight="700" fill="#0f172a">Product Quality &amp; Hardware Defects</text>
+    <rect x="470" y="390" width="80" height="20" rx="5" fill="#fee2e2" />
+    <text x="482" y="404" font-size="10" font-weight="700" fill="#991b1b">7 issues</text>
+    <text x="100" y="425" font-size="11" fill="#475569" font-style="italic">"One mug arrived broken; left earbud stopped working after two days."</text>
+    <text x="100" y="445" font-size="10.5" fill="#64748b">Primary impact: Wireless Earbuds X2, Ceramic Coffee Mug</text>
+
+    <!-- Complaint 2 -->
+    <rect x="50" y="490" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="65" y="505" width="24" height="24" rx="6" fill="#fee2e2" />
+    <text x="72" y="521" font-size="11" font-weight="800" fill="#b91c1c">#2</text>
+    <text x="100" y="517" font-size="13" font-weight="700" fill="#0f172a">Delivery Delays &amp; Logistics Tracking</text>
+    <rect x="470" y="505" width="80" height="20" rx="5" fill="#fee2e2" />
+    <text x="482" y="519" font-size="10" font-weight="700" fill="#991b1b">5 issues</text>
+    <text x="100" y="540" font-size="11" fill="#475569" font-style="italic">"Delivered in 3 weeks (R003 sarcasm); tracking says delivered but never arrived."</text>
+    <text x="100" y="560" font-size="10.5" fill="#64748b">Primary impact: Cotton Bedsheet Set, Bamboo Desk Organizer</text>
+
+    <!-- Complaint 3 -->
+    <rect x="50" y="605" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="65" y="620" width="24" height="24" rx="6" fill="#fee2e2" />
+    <text x="72" y="636" font-size="11" font-weight="800" fill="#b91c1c">#3</text>
+    <text x="100" y="632" font-size="13" font-weight="700" fill="#0f172a">Customer Support Responsiveness</text>
+    <rect x="470" y="620" width="80" height="20" rx="5" fill="#fee2e2" />
+    <text x="482" y="634" font-size="10" font-weight="700" fill="#991b1b">4 issues</text>
+    <text x="100" y="655" font-size="11" fill="#475569" font-style="italic">"Support took 6 days to reply and still no refund; ticket open for 5 days."</text>
+    <text x="100" y="675" font-size="10.5" fill="#64748b">Primary impact: Ceramic Mug, Bamboo Desk Organizer</text>
+  </g>
+
+  <!-- Right Column: Praises -->
+  <g filter="url(#shadow)">
+    <rect x="615" y="315" width="555" height="425" rx="16" fill="#ffffff" stroke="#a7f3d0" />
+    <rect x="615" y="315" width="555" height="4" fill="url(#praiseGrad)" rx="2" />
+    <circle cx="640" cy="345" r="12" fill="#d1fae5" />
+    <path d="M635 345 L639 349 L647 341" fill="none" stroke="#059669" stroke-width="2" />
+    <text x="660" y="348" font-size="15" font-weight="800" fill="#0f172a">Top 3 Customer Praises</text>
+    <rect x="1070" y="333" width="85" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0" />
+    <text x="1085" y="348" font-size="10" font-weight="700" fill="#065f46">Strengths</text>
+
+    <!-- Praise 1 -->
+    <rect x="635" y="375" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="650" y="390" width="24" height="24" rx="6" fill="#d1fae5" />
+    <text x="657" y="406" font-size="11" font-weight="800" fill="#065f46">#1</text>
+    <text x="685" y="402" font-size="13" font-weight="700" fill="#0f172a">Fabric Comfort &amp; Material Quality</text>
+    <rect x="1055" y="390" width="80" height="20" rx="5" fill="#d1fae5" />
+    <text x="1065" y="404" font-size="10" font-weight="700" fill="#047857">10 praises</text>
+    <text x="685" y="425" font-size="11" fill="#475569" font-style="italic">"Super soft fabric, colours did not fade after 3 washes. Worth the price."</text>
+    <text x="685" y="445" font-size="10.5" fill="#64748b">Primary praise: Cotton Bedsheet Set, Bamboo Desk Organizer</text>
+
+    <!-- Praise 2 -->
+    <rect x="635" y="490" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="650" y="505" width="24" height="24" rx="6" fill="#d1fae5" />
+    <text x="657" y="521" font-size="11" font-weight="800" fill="#065f46">#2</text>
+    <text x="685" y="517" font-size="13" font-weight="700" fill="#0f172a">Audio Bass &amp; Wearing Ergonomics</text>
+    <rect x="1055" y="505" width="80" height="20" rx="5" fill="#d1fae5" />
+    <text x="1068" y="519" font-size="10" font-weight="700" fill="#047857">6 praises</text>
+    <text x="685" y="540" font-size="11" fill="#475569" font-style="italic">"Bass is solid, fit is comfortable, next-day delivery. Very happy!"</text>
+    <text x="685" y="560" font-size="10.5" fill="#64748b">Primary praise: Wireless Earbuds X2</text>
+
+    <!-- Praise 3 -->
+    <rect x="635" y="605" width="515" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="650" y="620" width="24" height="24" rx="6" fill="#d1fae5" />
+    <text x="657" y="636" font-size="11" font-weight="800" fill="#065f46">#3</text>
+    <text x="685" y="632" font-size="13" font-weight="700" fill="#0f172a">Athletic Performance &amp; Lightweight Feel</text>
+    <rect x="1055" y="620" width="80" height="20" rx="5" fill="#d1fae5" />
+    <text x="1068" y="634" font-size="10" font-weight="700" fill="#047857">4 praises</text>
+    <text x="685" y="655" font-size="11" fill="#475569" font-style="italic">"Ran a half marathon with zero blisters. Best shoes bought online."</text>
+    <text x="685" y="675" font-size="10.5" fill="#64748b">Primary praise: Running Shoes Pro</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%" style="background:#f1f5f9; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="modalShadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Backdrop -->
+  <rect x="0" y="0" width="700" height="500" fill="#0f172a" opacity="0.4" />
+
+  <!-- Modal Container -->
+  <g filter="url(#modalShadow)">
+    <rect x="75" y="40" width="550" height="420" rx="16" fill="#ffffff" stroke="#e2e8f0" />
+
+    <!-- Modal Header -->
+    <rect x="75" y="40" width="550" height="60" rx="16" fill="#f8fafc" />
+    <rect x="95" y="55" width="30" height="30" rx="8" fill="#eef2ff" />
+    <path d="M103 70 L110 63 L117 70" stroke="#4f46e5" stroke-width="2" fill="none" />
+    <text x="135" y="68" font-size="15" font-weight="800" fill="#0f172a">Suggested Store Reply</text>
+    <text x="135" y="85" font-size="11" fill="#64748b">Generated on-demand for review <tspan font-family="'JetBrains Mono', monospace" font-weight="bold">R012</tspan> (Defective earbud)</text>
+    <text x="590" y="72" font-size="16" fill="#94a3b8" cursor="pointer">✕</text>
+
+    <!-- Customer Feedback Card -->
+    <rect x="95" y="115" width="510" height="85" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="110" y="135" font-size="12" font-weight="700" fill="#334155">Wireless Earbuds X2</text>
+    <text x="550" y="135" font-size="12" font-weight="bold" fill="#f59e0b">1★</text>
+    <text x="110" y="155" font-size="11.5" fill="#475569" font-style="italic">"The left earbud stopped working after 2 days."</text>
+    <line x1="110" y1="168" x2="585" y2="168" stroke="#e2e8f0" />
+    <text x="110" y="185" font-size="10.5" font-weight="600" fill="#4f46e5">AI Summary: Defective hardware; left earbud ceased functioning after 2 days.</text>
+
+    <!-- Generated Reply Area -->
+    <text x="95" y="222" font-size="12" font-weight="700" fill="#1e293b">Store Owner Response (Auto-Drafted, Fully Editable)</text>
+    <rect x="95" y="235" width="510" height="130" rx="10" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5" />
+    
+    <text x="110" y="260" font-size="12" fill="#1e293b" font-weight="500">Hi there, thank you for bringing this to our attention.</text>
+    <text x="110" y="282" font-size="12" fill="#1e293b" font-weight="500">We are genuinely sorry to hear that your earbud stopped functioning</text>
+    <text x="110" y="304" font-size="12" fill="#1e293b" font-weight="500">properly so early on. Please reach out to us at support@reviewlens.store</text>
+    <text x="110" y="326" font-size="12" fill="#1e293b" font-weight="500">with your order ID so we can immediately ship out a brand-new replacement pair.</text>
+    <text x="110" y="348" font-size="11.5" fill="#64748b" font-weight="600">Warm regards, Customer Care Team.</text>
+
+    <!-- Modal Footer Actions -->
+    <rect x="75" y="380" width="550" height="80" rx="16" fill="#f8fafc" />
+    <rect x="95" y="398" width="135" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+    <text x="120" y="421" font-size="11.5" font-weight="600" fill="#334155">📋 Copy Reply</text>
+
+    <text x="445" y="421" font-size="12" fill="#64748b" cursor="pointer">Cancel</text>
+    <rect x="495" y="398" width="110" height="36" rx="8" fill="#4f46e5" />
+    <text x="515" y="421" font-size="11.5" font-weight="700" fill="#ffffff">Mark Replied</text>
+  </g>
+</svg>
