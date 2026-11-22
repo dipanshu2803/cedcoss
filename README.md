@@ -35,8 +35,8 @@ ReviewLens is designed to run seamlessly on any machine with **Node.js (v18, v20
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dipanshupatidar/reviewlens.git
-cd reviewlens
+git clone https://github.com/dipanshu2803/cedcoss.git
+cd cedcoss
 
 # 2. Install dependencies (server and client)
 npm install
@@ -250,3 +250,4 @@ In accordance with the assessment guidelines:
 - [x] Automated test suite passing (`npm test` — 14/14 tests)
 - [x] No secrets or `.env` files committed
 - [x] ZIP archive under 10MB
+
