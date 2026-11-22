@@ -1,0 +1,33 @@
+{
+  "name": "reviewlens",
+  "version": "1.0.0",
+  "description": "AI-powered product review insights engine for e-commerce store owners",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "node server/index.js",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "test": "node --test server/tests/*.test.js"
+  },
+  "keywords": [
+    "review-analysis",
+    "ai",
+    "ecommerce",
+    "sentiment-analysis",
+    "llm",
+    "gemini"
+  ],
+  "author": "Dipanshu Patidar",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "zod": "^3.24.2"
+  }
+}

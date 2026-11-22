@@ -1,0 +1,31 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Node & Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database & Runtime Cache
+data/
+!data/.gitkeep
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+cache.json
+
+# Builds & Production
+dist/
+build/
+client/dist/
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
