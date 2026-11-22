@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  reviewlens:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reviewlens-app
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - LLM_PROVIDER=${LLM_PROVIDER:-gemini}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - GROQ_MODEL=${GROQ_MODEL:-llama-3.3-70b-versatile}
+      - BATCH_SIZE=5
+      - MAX_RETRIES=3
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
